@@ -8,4 +8,4 @@ printf "Job is running in directory: "; /bin/pwd
 
 printf "Contents of input.txt is "; cat input.txt
 cat input.txt > output$1.txt
-sleep 20
+sleep 10
