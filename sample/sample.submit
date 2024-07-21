@@ -1,14 +1,16 @@
+JOBID=$(Cluster).$(Process)
+# Cluster and Process are default
+# variables defined by HTCondor
+
 executable = sample-exec.sh
-arguments = $(Cluster)
-# the cluster variable is the first part of
-# a job's ID number
+arguments = $(JOBID)
 
 transfer_input_files = input.txt
 should_transfer_files = YES
 
-log = job.$(Cluster).log
-error = job.$(Cluster).error
-output = job.$(Cluster).output
+log = job.$(JOBID).log
+error = job.$(JOBID).error
+output = job.$(JOBID).output
 
 request_cpus = 1
 request_memory = 1GB
