@@ -1,6 +1,8 @@
 #!/bin/bash
 # Executable name: fastqc.sh
 
+ls -lh
+
 # Prepare software environment
 export PATH=/FastQC:/usr/lib/jvm/java-11-openjdk-amd64/bin:$PATH
 export LD_LIBRARY_PATH=/usr/lib/jvm/java-11-openjdk-amd64/lib/jli
